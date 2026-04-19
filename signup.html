@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<!-- ================ Sticky Navigation ================ -->
+<header class="hh-header">
+    <div class="hh-container hh-nav">
+        <a href="index.html" class="hh-brand" aria-label="HelpHub AI home">
+            <span class="hh-brand-mark">H</span>
+            <span class="hh-brand-name">HelpHub AI</span>
+        </a>
+        <nav class="hh-nav-tabs" aria-label="Primary">
+            <a href="index.html" class="hh-tab">Home</a>
+            <a href="explore.html" class="hh-tab">Explore</a>
+            <a href="#" class="hh-tab">Leaderboard</a>
+        </nav>
+    </div>
+</header>
+
+<main class="hh-container hh-auth-wrap">
+    <section class="hh-auth-grid" aria-label="Community access">
+
+        <!-- ============ Left: Dark info card ============ -->
+        <aside class="hh-auth-info">
+            <span class="hh-eyebrow hh-eyebrow-dark">Community access</span>
+            <h2 class="hh-auth-title">Enter the support network.</h2>
+            <p class="hh-auth-sub">
+                Choose a demo identity, set your role, and jump into a multi-page product flow
+                designed for asking, offering, and tracking help with a premium interface.
+            </p>
+            <ul class="hh-auth-list">
+                <li>Role-based entry for Need Help, Can Help, or Both</li>
+                <li>Direct path into dashboard, requests, AI Center, and community feed</li>
+                <li>Persistent demo session powered by LocalStorage</li>
+            </ul>
+        </aside>
+
+        <!-- ============ Right: Login card ============ -->
+        <div class="hh-auth-card">
+            <span class="hh-eyebrow">Login</span>
+            <h1 class="hh-auth-card-title">Authenticate your community profile</h1>
+
+            <form class="hh-auth-form" action="#" method="post">
+
+                <div class="hh-field">
+                    <label class="hh-label" for="name">Select User</label>
+                    <input type="text" id="name" class="hh-input" placeholder="Your name" required aria-required="true">
+                </div>
+
+                <div class="hh-field">
+                    <label class="hh-label" for="roles">Role selection</label>
+                    <div class="hh-select-wrap">
+                        <!-- <label for="cars">Choose a car:</label> -->
+                        <select name="roles" id="roles" class="hh-select" required>
+                            <option value="" disabled selected>Select your role</option>
+                            <option value="helper">Helper</option>
+                            <option value="receiver">Receiver</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="hh-auth-row">
+                    <div class="hh-field">
+                        <label class="hh-label" for="email">Email</label>
+                        <input type="email" id="email" class="hh-input" placeholder="youremail@gmail.com" required>
+                    </div>
+                    <div class="hh-field">
+                        <label class="hh-label" for="password">Password</label>
+                        <input type="password" id="password" class="hh-input" placeholder="Enter Your password" required>
+                    </div>
+                </div>
+
+                <p id="status" class="hh-auth-status"></p>
+
+                <button id="signup_btn" class="hh-btn hh-btn-primary hh-btn-block" type="submit">Continue to dashboard</button>
+
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="hh-container hh-footer">
+    <p>© HelpHub AI — A premium support network for communities.</p>
+</footer>
+
+<script src="signup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leaderboard — HelpHub AI</title>
+    <meta
+      name="description"
+      content="See top HelpHub AI helpers ranked by trust score, contribution count, and earned badges that highlight reliable community members."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="leaderboard.css" />
+  </head>
+  <body>
+    <!-- ================ Sticky Navigation ================ -->
+    <header class="hh-header">
+      <div class="hh-container hh-nav">
+        <a href="./index.html" class="hh-brand" aria-label="HelpHub AI home">
+          <span class="hh-brand-mark">H</span>
+          <span class="hh-brand-name">HelpHub AI</span>
+        </a>
+
+        <nav class="hh-nav-tabs" aria-label="Primary">
+          <a href="./dashboard.html" class="hh-tab">Dashboard</a>
+          <a href="./explore.html" class="hh-tab">Explore</a>
+          <a href="./leaderboard.html" class="hh-tab" data-active="true">Leaderboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================ Hero (dark card) ================ -->
+      <section class="hh-container hh-lb-hero-wrap">
+        <div class="hh-lb-hero">
+          <span class="hh-eyebrow hh-eyebrow-dark">Leaderboard</span>
+          <h1 class="hh-lb-hero-title">
+            Recognize the people who keep the community moving.
+          </h1>
+          <p class="hh-lb-hero-sub">
+            Trust score, contribution count, and badges create visible momentum for reliable helpers.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================ Two-column content ================ -->
+      <section class="hh-container hh-lb-grid">
+        <!-- Rankings -->
+        <article class="hh-lb-card">
+          <span class="hh-eyebrow">Top Helpers</span>
+          <h2 class="hh-lb-card-title">Rankings</h2>
+
+          <ul class="hh-rank-list">
+            <li class="hh-rank-item">
+              <span class="hh-avatar hh-avatar-teal" aria-hidden="true">AK</span>
+              <div class="hh-rank-body">
+                <div class="hh-rank-row">
+                  <span class="hh-rank-name">#1 Ayesha Khan</span>
+                  <span class="hh-rank-score">92%</span>
+                </div>
+                <div class="hh-rank-row hh-rank-row-meta">
+                  <span class="hh-rank-skills">Figma, UI/UX, HTML/CSS</span>
+                  <span class="hh-rank-contrib">31 contributions</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="hh-rank-item">
+              <span class="hh-avatar hh-avatar-dark" aria-hidden="true">HA</span>
+              <div class="hh-rank-body">
+                <div class="hh-rank-row">
+                  <span class="hh-rank-name">#2 Hassan Ali</span>
+                  <span class="hh-rank-score">88%</span>
+                </div>
+                <div class="hh-rank-row hh-rank-row-meta">
+                  <span class="hh-rank-skills">JavaScript, React, Git/GitHub</span>
+                  <span class="hh-rank-contrib">24 contributions</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="hh-rank-item">
+              <span class="hh-avatar hh-avatar-orange" aria-hidden="true">SN</span>
+              <div class="hh-rank-body">
+                <div class="hh-rank-row">
+                  <span class="hh-rank-name">#3 Sara Noor</span>
+                  <span class="hh-rank-score">74%</span>
+                </div>
+                <div class="hh-rank-row hh-rank-row-meta">
+                  <span class="hh-rank-skills">Python, Data Analysis</span>
+                  <span class="hh-rank-contrib">11 contributions</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Badges / Trust -->
+        <article class="hh-lb-card">
+          <span class="hh-eyebrow">Badge System</span>
+          <h2 class="hh-lb-card-title">Trust and achievement</h2>
+
+          <ul class="hh-badge-list">
+            <li class="hh-badge-item">
+              <h3 class="hh-badge-name">Ayesha Khan</h3>
+              <p class="hh-badge-meta">Design Ally • Fast Responder • Top Mentor</p>
+              <div class="hh-progress" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                <span class="hh-progress-fill" style="--hh-progress: 92%"></span>
+              </div>
+            </li>
+
+            <li class="hh-badge-item">
+              <h3 class="hh-badge-name">Hassan Ali</h3>
+              <p class="hh-badge-meta">Code Rescuer • Bug Hunter</p>
+              <div class="hh-progress" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                <span class="hh-progress-fill" style="--hh-progress: 88%"></span>
+              </div>
+            </li>
+
+            <li class="hh-badge-item">
+              <h3 class="hh-badge-name">Sara Noor</h3>
+              <p class="hh-badge-meta">Community Voice</p>
+              <div class="hh-progress" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
+                <span class="hh-progress-fill" style="--hh-progress: 74%"></span>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="hh-container hh-footer">
+      <p>© HelpHub AI — Building a culture of reliable, recognized helpers.</p>
+    </footer>
+  </body>
+</html>

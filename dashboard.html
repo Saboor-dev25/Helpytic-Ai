@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HelpHub AI — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        
+        
+        <div class="brand-logo">H</div>
+        <span class="brand-name">HelpHub AI</span>
+      </div>
+      <nav class="nav-links">
+        <a href="./dashboard.css" class="nav-link active">Dashboard</a>
+        <a href="./explore.html" class="nav-link">Explore</a>
+        <a href="#" class="nav-link">Create Request</a>
+        <a href="#" class="nav-link">Messages</a>
+        <a href="#" class="nav-link">Profile</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-ghost">Notifications</button>
+        <button class="btn btn-primary">Open AI Center</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero-card">
+      <p class="eyebrow eyebrow-light" id="dash">DASHBOARD</p>
+      <h1 class="hero-title" id="ash"></h1>
+      <p class="hero-sub">Your command center for requests, AI insights, helper momentum, and live community activity.</p>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-grid">
+      <article class="stat-card">
+        <p class="eyebrow">TRUST SCORE</p>
+        <h2 class="stat-value">92%</h2>
+        <p class="stat-desc">Driven by solved requests and consistent support.</p>
+      </article>
+      <article class="stat-card">
+        <p class="eyebrow">HELPING</p>
+        <h2 class="stat-value">2</h2>
+        <p class="stat-desc">Requests where you are currently listed as a helper.</p>
+      </article>
+      <article class="stat-card">
+        <p class="eyebrow">OPEN REQUESTS</p>
+        <h2 class="stat-value">2</h2>
+        <p class="stat-desc">Community requests currently active across the feed.</p>
+      </article>
+      <article class="stat-card">
+        <p class="eyebrow">AI PULSE</p>
+        <h2 class="stat-value">1 trends</h2>
+        <p class="stat-desc">Trend count detected in the latest request activity.</p>
+      </article>
+    </section>
+
+    <!-- MAIN GRID -->
+    <section class="main-grid">
+      <!-- LEFT COLUMN: REQUESTS -->
+      <div class="col-left">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">RECENT REQUESTS</p>
+            <h2 class="section-title">What the community needs<br/>right now</h2>
+          </div>
+          <button class="btn btn-pill">Go to feed</button>
+        </div>
+
+        <!-- Request Card 1 -->
+        <article class="request-card">
+          <div class="tag-row">
+            <span class="tag tag-soft">Web Development</span>
+            <span class="tag tag-danger">High</span>
+            <span class="tag tag-soft">Open</span>
+          </div>
+          <h3 class="request-title">Need help making my portfolio responsive before demo day</h3>
+          <p class="request-desc">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+          <div class="tag-row">
+            <span class="tag tag-soft">HTML/CSS</span>
+            <span class="tag tag-soft">Responsive</span>
+            <span class="tag tag-soft">Portfolio</span>
+          </div>
+          <div class="request-foot">
+            <div>
+              <p class="user-name">Sara Noor</p>
+              <p class="user-meta">Karachi • 1 helper interested</p>
+            </div>
+            <button class="btn btn-pill">Open details</button>
+          </div>
+        </article>
+
+        <!-- Request Card 2 -->
+        <article class="request-card">
+          <div class="tag-row">
+            <span class="tag tag-soft">Design</span>
+            <span class="tag tag-warn">Medium</span>
+            <span class="tag tag-soft">Open</span>
+          </div>
+          <h3 class="request-title">Looking for Figma feedback on a volunteer event poster</h3>
+          <p class="request-desc">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+          <div class="tag-row">
+            <span class="tag tag-soft">Figma</span>
+            <span class="tag tag-soft">Poster</span>
+            <span class="tag tag-soft">Design Review</span>
+          </div>
+          <div class="request-foot">
+            <div>
+              <p class="user-name">Ayesha Khan</p>
+              <p class="user-meta">Lahore • 1 helper interested</p>
+            </div>
+            <button class="btn btn-pill">Open details</button>
+          </div>
+        </article>
+
+        <!-- Request Card 3 -->
+        <article class="request-card">
+          <div class="tag-row">
+            <span class="tag tag-soft">Career</span>
+            <span class="tag tag-soft">Low</span>
+            <span class="tag tag-success">Solved</span>
+          </div>
+          <h3 class="request-title">Need mock interview support for internship applications</h3>
+          <p class="request-desc">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+          <div class="tag-row">
+            <span class="tag tag-soft">Interview Prep</span>
+            <span class="tag tag-soft">Career</span>
+            <span class="tag tag-soft">Frontend</span>
+          </div>
+          <div class="request-foot">
+            <div>
+              <p class="user-name">Sara Noor</p>
+              <p class="user-meta">Remote • 2 helpers interested</p>
+            </div>
+            <button class="btn btn-pill">Open details</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="col-right">
+        <article class="side-card">
+          <p class="eyebrow">AI INSIGHTS</p>
+          <h3 class="side-title">Suggested actions for you</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-key">Most requested category</span>
+              <span class="info-val">Web Development</span>
+            </li>
+            <li>
+              <span class="info-key">Your strongest trust driver</span>
+              <span class="info-val">Design Ally</span>
+            </li>
+            <li>
+              <span class="info-key">AI says you can mentor in</span>
+              <span class="info-val info-val-right">HTML/CSS, UI/UX, Career Guidance, Figma</span>
+            </li>
+            <li>
+              <span class="info-key">Your active requests</span>
+              <span class="info-val">1</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="side-card">
+          <p class="eyebrow">NOTIFICATIONS</p>
+          <h3 class="side-title">Latest updates</h3>
+
+          <div class="notif">
+            <div class="notif-body">
+              <p class="notif-title">New helper matched to your responsive portfolio request</p>
+              <p class="notif-meta">Match • 12 min ago</p>
+            </div>
+            <span class="badge badge-unread">Unread</span>
+          </div>
+
+          <div class="notif">
+            <div class="notif-body">
+              <p class="notif-title">Your trust score increased after a solved request</p>
+              <p class="notif-meta">Reputation • 1 hr ago</p>
+            </div>
+            <span class="badge badge-unread">Unread</span>
+          </div>
+
+          <div class="notif">
+            <div class="notif-body">
+              <p class="notif-title">AI Center detected rising demand for interview prep</p>
+              <p class="notif-meta">Insight • Today</p>
+            </div>
+            <span class="badge badge-read">Read</span>
+          </div>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <script src="./dashboard.js"></script>
+</body>
+</html>

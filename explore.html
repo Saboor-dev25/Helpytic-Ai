@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore Feed — HelpHub AI</title>
+    <meta
+      name="description"
+      content="Browse HelpHub AI help requests with filterable community context. Filter by category, urgency, skills, and location to surface the best matches."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="explore.css" />
+  </head>
+  <body>
+    <!-- ================ Sticky Navigation ================ -->
+    <header class="hh-header">
+      <div class="hh-container hh-nav">
+        <a href="./index.html" class="hh-brand" aria-label="HelpHub AI home">
+          <span class="hh-brand-mark">H</span>
+          <span class="hh-brand-name">HelpHub AI</span>
+        </a>
+
+        <nav class="hh-nav-tabs" aria-label="Primary">
+          <a href="./dashboard.html" class="hh-tab">Dashboard</a>
+          <a href="./explore.html" class="hh-tab" data-active="true">Explore</a>
+          <a href="./leaderboard.html" class="hh-tab">Leaderboard</a>
+          <a href="#" class="hh-tab">Notifications</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================ Hero (dark card) ================ -->
+      <section class="hh-container hh-hero-wrap">
+        <div class="hh-hero-card">
+          <span class="hh-eyebrow hh-eyebrow-dark">Explore / Feed</span>
+          <h1 class="hh-hero-title">
+            Browse help requests with filterable community context.
+          </h1>
+          <p class="hh-hero-sub">
+            Filter by category, urgency, skills, and location to surface the
+            best matches.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================ Two-column layout ================ -->
+      <section class="hh-container hh-explore">
+        <!-- ---------- Sidebar Filters ---------- -->
+        <aside class="hh-filter-card" aria-label="Filters">
+          <span class="hh-eyebrow">Filters</span>
+          <h2 class="hh-filter-title">Refine the feed</h2>
+
+          <form class="hh-filter-form" action="#">
+            <div class="hh-field">
+              <label class="hh-label" for="category">Category</label>
+              <div class="hh-select-wrap">
+                <select id="category" class="hh-select">
+                  <option>All categories</option>
+                  <option>Web Development</option>
+                  <option>Design</option>
+                  <option>Career</option>
+                  <option>Tutoring</option>
+                  <option>Local Errands</option>
+                  <option>Translation</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="hh-field">
+              <label class="hh-label" for="urgency">Urgency</label>
+              <div class="hh-select-wrap">
+                <select id="urgency" class="hh-select">
+                  <option>All urgency levels</option>
+                  <option>Critical</option>
+                  <option>High</option>
+                  <option>Medium</option>
+                  <option>Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="hh-field">
+              <label class="hh-label" for="skills">Skills</label>
+              <input
+                id="skills"
+                type="text"
+                class="hh-input"
+                placeholder="React, Figma, Git/GitHub"
+              />
+            </div>
+
+            <div class="hh-field">
+              <label class="hh-label" for="location">Location</label>
+              <input
+                id="location"
+                type="text"
+                class="hh-input"
+                placeholder="Karachi, Lahore, Remote"
+              />
+            </div>
+          </form>
+        </aside>
+
+        <!-- ---------- Listings ---------- -->
+        <section class="hh-listings" aria-label="Help requests">
+          <!-- Card 1 -->
+          <article class="hh-list-card">
+            <ul class="hh-chip-row">
+              <li class="hh-chip hh-chip-tag">Web Development</li>
+              <li class="hh-chip hh-chip-warn">High</li>
+              <li class="hh-chip hh-chip-ok">Open</li>
+            </ul>
+
+            <h3 class="hh-list-title">
+              Need help making my portfolio responsive before demo day
+            </h3>
+            <p class="hh-list-body">
+              My HTML/CSS portfolio breaks on tablets and I need layout guidance
+              before tomorrow evening.
+            </p>
+
+            <ul class="hh-chip-row">
+              <li class="hh-chip hh-chip-tag">HTML/CSS</li>
+              <li class="hh-chip hh-chip-tag">Responsive</li>
+              <li class="hh-chip hh-chip-tag">Portfolio</li>
+            </ul>
+
+            <footer class="hh-list-foot">
+              <div class="hh-poster">
+                <div class="hh-poster-name">Sara Noor</div>
+                <div class="hh-poster-meta">Karachi · 1 helper interested</div>
+              </div>
+              <a href="#" class="hh-btn hh-btn-outline">Open details</a>
+            </footer>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="hh-list-card">
+            <ul class="hh-chip-row">
+              <li class="hh-chip hh-chip-tag">Design</li>
+              <li class="hh-chip hh-chip-mid">Medium</li>
+              <li class="hh-chip hh-chip-ok">Open</li>
+            </ul>
+
+            <h3 class="hh-list-title">
+              Looking for Figma feedback on a volunteer event poster
+            </h3>
+            <p class="hh-list-body">
+              I have a draft poster for a campus community event and want
+              sharper hierarchy, spacing, and CTA copy.
+            </p>
+
+            <ul class="hh-chip-row">
+              <li class="hh-chip hh-chip-tag">Figma</li>
+              <li class="hh-chip hh-chip-tag">Poster</li>
+              <li class="hh-chip hh-chip-tag">Design Review</li>
+            </ul>
+
+            <footer class="hh-list-foot">
+              <div class="hh-poster">
+                <div class="hh-poster-name">Ayesha Khan</div>
+                <div class="hh-poster-meta">Lahore · 1 helper interested</div>
+              </div>
+              <a href="#" class="hh-btn hh-btn-outline">Open details</a>
+            </footer>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="hh-list-card">
+            <ul class="hh-chip-row">
+              <li class="hh-chip hh-chip-tag">Career</li>
+              <li class="hh-chip hh-chip-low">Low</li>
+              <li class="hh-chip hh-chip-solved">Solved</li>
+            </ul>
+
+            <h3 class="hh-list-title">
+              Need mock interview support for internship applications
+            </h3>
+            <p class="hh-list-body">
+              Applying to frontend internships and need someone to practice
+              behavioral and technical interview questions with me.
+            </p>
+
+            <ul class="hh-chip-row">
+              <li class="hh-chip hh-chip-tag">Interview Prep</li>
+              <li class="hh-chip hh-chip-tag">Career</li>
+              <li class="hh-chip hh-chip-tag">Frontend</li>
+            </ul>
+
+            <footer class="hh-list-foot">
+              <div class="hh-poster">
+                <div class="hh-poster-name">Sara Noor</div>
+                <div class="hh-poster-meta">Remote · 2 helpers interested</div>
+              </div>
+              <a href="#" class="hh-btn hh-btn-outline">Open details</a>
+            </footer>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="hh-footer">
+      <div class="hh-container hh-footer-inner">
+        <span>© 2026 HelpHub AI</span>
+        <span class="hh-footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
